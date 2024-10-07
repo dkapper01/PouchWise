@@ -1,44 +1,54 @@
-import NextLogo from "./next-logo";
-import SupabaseLogo from "./supabase-logo";
+"use client";
 
-export default function Header() {
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight } from "lucide-react";
+
+export function Hero() {
   return (
-    <div className="flex flex-col gap-16 items-center">
-      <div className="flex gap-8 justify-center items-center">
-        <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SupabaseLogo />
-        </a>
-        <span className="border-l rotate-45 h-6" />
-        <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <NextLogo />
-        </a>
-      </div>
-      <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
-      <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
-        The fastest way to build apps with{" "}
-        <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-          target="_blank"
-          className="font-bold hover:underline"
-          rel="noreferrer"
-        >
-          Supabase
-        </a>{" "}
-        and{" "}
-        <a
-          href="https://nextjs.org/"
-          target="_blank"
-          className="font-bold hover:underline"
-          rel="noreferrer"
-        >
-          Next.js
-        </a>
-      </p>
-      <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-8" />
-    </div>
+    <Card className="bg-background/90 backdrop-blur-2xl border-none shadow-2xl overflow-hidden">
+      <CardContent className="p-8 sm:p-12 relative">
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500" />
+        <div className="flex flex-col justify-center space-y-10 max-w-4xl mx-auto">
+          <div className="text-center">
+            <Badge className="mb-6 text-sm font-semibold bg-primary/10 text-primary px-4 py-1.5 rounded-full inline-flex items-center">
+              {/* <Ring className="w-4 h-4 mr-2" /> */}
+              AI-Powered Smart Ring Technology
+            </Badge>
+            <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
+                Revolutionize
+              </span>
+              <span className="block mt-2 text-foreground">
+                Your Nicotine Health Journey
+              </span>
+            </h1>
+          </div>
+          <p className="text-xl text-muted-foreground text-center leading-relaxed">
+            Experience a new era of health management with our AI smart ring,
+            designed specifically for nicotine users. Track your progress, earn
+            rewards, and receive personalized insights to support your wellness
+            journey every step of the way.
+          </p>
+          <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0 justify-center">
+            <Button
+              size="lg"
+              className="group text-lg px-8 py-6 rounded-full bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 transition-all duration-300 shadow-lg hover:shadow-xl text-white"
+            >
+              Start Your Journey
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-lg px-8 py-6 rounded-full border-2 hover:bg-primary/5 transition-all duration-300"
+            >
+              Learn More
+            </Button>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
   );
 }
