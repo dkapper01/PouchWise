@@ -36,7 +36,16 @@ export default function Signup({ searchParams }: { searchParams: Message }) {
             minLength={6}
             required
           />
-          <SubmitButton formAction={signUpAction} pendingText="Signing up...">
+          <SubmitButton
+            formAction={async (formData) => {
+              const result = await signUpAction(formData);
+              if (result.error) {
+                // Handle the error, e.g., display it to the user
+                console.error(result.error);
+              }
+            }}
+            pendingText="Signing up..."
+          >
             Sign up
           </SubmitButton>
           <FormMessage message={searchParams} />
