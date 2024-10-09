@@ -23,7 +23,7 @@ import {
 } from "./ui/alert-dialog";
 import { Clock, Cigarette, Award, DollarSign, Heart, Zap } from "lucide-react";
 
-export function EnhancedNicotineTrackerComponent() {
+const EnhancedNicotineTrackerComponent = () => {
   const [lastIntake, setLastIntake] = useState<number | null>(null);
   const [elapsedTime, setElapsedTime] = useState<{
     days: number;
@@ -120,7 +120,7 @@ export function EnhancedNicotineTrackerComponent() {
   const formatTime = (value: number) => value.toString().padStart(2, "0");
 
   return (
-    <Card className="w-full max-w-2xl mx-auto">
+    <Card className="w-full max-w-2xl mx-auto border-none shadow-none">
       <CardHeader>
         <CardTitle className="text-3xl font-bold text-center">
           Your Nicotine-Free Journey
@@ -250,4 +250,6 @@ export function EnhancedNicotineTrackerComponent() {
       </CardContent>
     </Card>
   );
-}
+};
+
+export default EnhancedNicotineTrackerComponent;
