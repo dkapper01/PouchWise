@@ -110,12 +110,12 @@ export function NicotineTracker() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500">
-      <header className="bg-gradient-to-r from-purple-800 to-purple-600 text-white p-6 sticky top-0 z-10">
+      {/* <header className="bg-gradient-to-r from-purple-800 to-purple-600 text-white p-6 sticky top-0 z-10">
         <h1 className="text-3xl font-bold">Nicotine Tracker</h1>
         <p className="text-sm opacity-80">
           Monitor your health, one milligram at a time
         </p>
-      </header>
+      </header> */}
 
       <main className="flex-1 p-4 space-y-6 overflow-y-auto">
         <Card className="bg-white/10 backdrop-blur-lg border-purple-300/20">
@@ -169,7 +169,7 @@ export function NicotineTracker() {
           </CardContent>
         </Card>
 
-        <Card className="bg-white/10 backdrop-blur-lg border-purple-300/20">
+        {/* <Card className="bg-white/10 backdrop-blur-lg border-purple-300/20">
           <CardHeader>
             <CardTitle className="text-white">Nicotine Log</CardTitle>
             <CardDescription className="text-purple-200">
@@ -231,7 +231,7 @@ export function NicotineTracker() {
               </CardContent>
             </Card>
           </CardContent>
-        </Card>
+        </Card> */}
 
         <Card className="bg-white/10 backdrop-blur-lg border-purple-300/20">
           <CardHeader>

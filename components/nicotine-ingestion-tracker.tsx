@@ -106,11 +106,11 @@ export function NicotineIngestionTracker() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500 flex flex-col text-white font-sans">
-      <header className="py-8 px-4 text-center bg-purple-900 bg-opacity-50">
+      {/* <header className="py-8 px-4 text-center bg-purple-900 bg-opacity-50">
         <h1 className="text-4xl font-bold tracking-tight">
           Nicotine-Free Journey
         </h1>
-      </header>
+      </header> */}
 
       <main className="flex-grow flex flex-col p-6 space-y-8 w-full">
         <div className="relative w-full max-w-xs mx-auto aspect-square">
@@ -178,10 +178,10 @@ export function NicotineIngestionTracker() {
           onClick={handleIngested}
           className="w-full py-6 text-xl font-semibold bg-red-500 hover:bg-red-600 text-white rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
         >
-          <AlertTriangle className="mr-2 h-6 w-6" />I Ingested Nicotine (Reset)
+          Log Nicotine Intake
         </Button>
 
-        {currentBenefit && (
+        {/* {currentBenefit && (
           <div className="bg-purple-800 bg-opacity-50 p-6 rounded-lg shadow-lg backdrop-filter backdrop-blur-sm">
             <h3 className="font-semibold mb-3 flex items-center text-xl">
               <Heart className="mr-3 text-red-400 h-7 w-7" />
@@ -194,14 +194,14 @@ export function NicotineIngestionTracker() {
               {currentBenefit.benefit}
             </p>
           </div>
-        )}
+        )} */}
 
-        <div className="text-center bg-purple-800 bg-opacity-50 p-6 rounded-lg shadow-lg backdrop-filter backdrop-blur-sm">
+        {/* <div className="text-center bg-purple-800 bg-opacity-50 p-6 rounded-lg shadow-lg backdrop-filter backdrop-blur-sm">
           <Zap className="inline mr-2 h-6 w-6 text-yellow-300" />
           <span className="text-lg">
             Every moment nicotine-free is a step towards a healthier you!
           </span>
-        </div>
+        </div> */}
       </main>
     </div>
   );

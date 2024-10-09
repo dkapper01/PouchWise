@@ -94,16 +94,6 @@ export function ExpandedNicotineInfoComponent() {
   return (
     <div className="min-h-screen bg-gray-100">
       <Card className="w-full max-w-3xl mx-auto overflow-hidden my-8">
-        <div className="h-40 bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center relative">
-          <img
-            src="/placeholder.svg?height=160&width=640"
-            alt="Nicotine Awareness"
-            className="h-full w-full object-cover opacity-50"
-          />
-          <h1 className="absolute text-4xl font-bold text-white">
-            Nicotine Awareness
-          </h1>
-        </div>
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold">
             Key Information on Nicotine Consumption
@@ -135,29 +125,6 @@ export function ExpandedNicotineInfoComponent() {
             ))}
           </ul>
         </CardContent>
-        <CardFooter className="flex flex-col items-center space-y-4">
-          <Button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white w-full">
-            Start Your Nicotine-Free Journey Today
-          </Button>
-          <div className="w-full">
-            <h3 className="text-lg font-semibold mb-2">Helpful Resources</h3>
-            <ul className="space-y-2">
-              {resources.map((resource, index) => (
-                <li key={index}>
-                  <a
-                    href={resource.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:text-blue-700 flex items-center"
-                  >
-                    {resource.title}
-                    <ExternalLink className="h-4 w-4 ml-1" />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </CardFooter>
       </Card>
     </div>
   );

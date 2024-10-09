@@ -85,14 +85,6 @@ export function FullWidthNicotineInfoComponent() {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500">
-      <header className="w-full bg-gradient-to-r from-purple-600 to-purple-800 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold text-white text-center">
-            Nicotine Awareness
-          </h1>
-        </div>
-      </header>
-
       <main className="w-full px-4 sm:px-6 lg:px-8 py-8">
         <div className="max-w-7xl mx-auto space-y-8">
           <section className="text-center">
@@ -102,13 +94,6 @@ export function FullWidthNicotineInfoComponent() {
             <p className="text-purple-200">
               Understanding the effects and risks of nicotine use
             </p>
-          </section>
-
-          <section className="bg-purple-800/50 rounded-lg border border-purple-300/30 p-4">
-            <h3 className="text-lg font-semibold mb-2 text-purple-100">
-              Fact of the Day
-            </h3>
-            <p className="text-sm text-purple-200">{factOfTheDay}</p>
           </section>
 
           <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -127,33 +112,6 @@ export function FullWidthNicotineInfoComponent() {
                 <p className="text-sm text-purple-300">{item.longDesc}</p>
               </div>
             ))}
-          </section>
-
-          <section className="text-center">
-            <Button className="bg-gradient-to-r from-purple-500 to-purple-700 text-white w-full max-w-md hover:from-purple-600 hover:to-purple-800 transition-all duration-300 py-6 text-lg">
-              Start Your Nicotine-Free Journey Today
-            </Button>
-          </section>
-
-          <section className="bg-purple-800/30 rounded-lg border border-purple-300/20 p-4">
-            <h3 className="text-lg font-semibold mb-4 text-purple-100">
-              Helpful Resources
-            </h3>
-            <ul className="space-y-2">
-              {resources.map((resource, index) => (
-                <li key={index}>
-                  <a
-                    href={resource.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-200 hover:text-purple-100 flex items-center"
-                  >
-                    {resource.title}
-                    <ExternalLink className="h-4 w-4 ml-1" />
-                  </a>
-                </li>
-              ))}
-            </ul>
           </section>
         </div>
       </main>

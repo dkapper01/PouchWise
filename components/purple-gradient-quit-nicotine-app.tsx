@@ -45,7 +45,7 @@ export function PurpleGradientQuitNicotineApp() {
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-purple-900 via-purple-700 to-purple-500 p-4 space-y-6">
-      <Card className="w-full bg-white bg-opacity-10 backdrop-blur-sm border-purple-300">
+      {/* <Card className="w-full bg-white bg-opacity-10 backdrop-blur-sm border-purple-300">
         <CardHeader>
           <CardTitle className="text-3xl font-bold text-white text-center">
             Quit Nicotine Pouches Challenge
@@ -86,19 +86,19 @@ export function PurpleGradientQuitNicotineApp() {
             </Button>
           </div>
         </CardContent>
-      </Card>
+      </Card> */}
 
-      <Tabs defaultValue="leaderboard" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 mb-4 bg-white bg-opacity-10">
+      <Tabs defaultValue="leaderboard" className="">
+        <TabsList className="flex justify-center bg-white bg-opacity-10">
           <TabsTrigger
             value="leaderboard"
-            className="text-lg py-3 text-white data-[state=active]:bg-purple-600"
+            className="text-md text-white data-[state=active]:bg-purple-600"
           >
             Leaderboard
           </TabsTrigger>
           <TabsTrigger
             value="rewards"
-            className="text-lg py-3 text-white data-[state=active]:bg-purple-600"
+            className="text-md text-white data-[state=active]:bg-purple-600"
           >
             Rewards
           </TabsTrigger>

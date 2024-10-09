@@ -121,11 +121,11 @@ const EnhancedNicotineTrackerComponent = () => {
 
   return (
     <Card className="w-full max-w-2xl mx-auto border-none shadow-none">
-      <CardHeader>
+      {/* <CardHeader>
         <CardTitle className="text-3xl font-bold text-center">
           Your Nicotine-Free Journey
         </CardTitle>
-      </CardHeader>
+      </CardHeader> */}
       <CardContent className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:col-span-2">
