@@ -161,11 +161,9 @@ export function NicotineIngestionTracker() {
         <div className="flex justify-between items-center bg-purple-800 bg-opacity-50 p-6 rounded-lg shadow-lg backdrop-filter backdrop-blur-sm">
           <div className="flex items-center">
             <Award className="text-yellow-300 mr-3 h-8 w-8" />
-            <span className="font-semibold text-xl">Streak</span>
+            <span className="font-semibold text-xl">Daily Rewards</span>
           </div>
-          <span className="text-4xl font-bold text-yellow-300">
-            {streak} days
-          </span>
+          <span className="text-4xl font-bold text-yellow-300">72 points</span>
         </div>
 
         <Button
@@ -174,28 +172,6 @@ export function NicotineIngestionTracker() {
         >
           Log Nicotine Intake
         </Button>
-
-        {/* {currentBenefit && (
-          <div className="bg-purple-800 bg-opacity-50 p-6 rounded-lg shadow-lg backdrop-filter backdrop-blur-sm">
-            <h3 className="font-semibold mb-3 flex items-center text-xl">
-              <Heart className="mr-3 text-red-400 h-7 w-7" />
-              Current Health Benefit
-            </h3>
-            <p className="text-lg">
-              <span className="font-medium text-purple-200">
-                {currentBenefit.time}:
-              </span>{" "}
-              {currentBenefit.benefit}
-            </p>
-          </div>
-        )} */}
-
-        {/* <div className="text-center bg-purple-800 bg-opacity-50 p-6 rounded-lg shadow-lg backdrop-filter backdrop-blur-sm">
-          <Zap className="inline mr-2 h-6 w-6 text-yellow-300" />
-          <span className="text-lg">
-            Every moment nicotine-free is a step towards a healthier you!
-          </span>
-        </div> */}
       </main>
     </div>
   );

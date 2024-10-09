@@ -184,7 +184,7 @@ export function EnhancedQuitSmokingTracker() {
             onClick={handleSmoked}
             className="w-full py-4 text-lg font-semibold bg-red-500 hover:bg-red-600 text-white"
           >
-            <Cigarette className="mr-2 h-5 w-5" />I Smoked (Reset)
+            <Cigarette className="mr-2 h-5 w-5" />I Smoked
           </Button>
 
           {currentBenefit && (
