@@ -106,12 +106,6 @@ export function NicotineIngestionTracker() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500 flex flex-col text-white font-sans">
-      {/* <header className="py-8 px-4 text-center bg-purple-900 bg-opacity-50">
-        <h1 className="text-4xl font-bold tracking-tight">
-          Nicotine-Free Journey
-        </h1>
-      </header> */}
-
       <main className="flex-grow flex flex-col p-6 space-y-8 w-full">
         <div className="relative w-full max-w-xs mx-auto aspect-square">
           <svg

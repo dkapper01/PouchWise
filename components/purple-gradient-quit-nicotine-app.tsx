@@ -45,49 +45,6 @@ export function PurpleGradientQuitNicotineApp() {
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-purple-900 via-purple-700 to-purple-500 p-4 space-y-6">
-      {/* <Card className="w-full bg-white bg-opacity-10 backdrop-blur-sm border-purple-300">
-        <CardHeader>
-          <CardTitle className="text-3xl font-bold text-white text-center">
-            Quit Nicotine Pouches Challenge
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-6">
-            <div className="flex justify-between items-center">
-              <div className="flex flex-col items-center space-y-1">
-                <Flame className="h-8 w-8 text-orange-400" />
-                <p className="text-sm font-medium text-purple-200">Streak</p>
-                <p className="text-2xl font-bold text-white">{streak} days</p>
-              </div>
-              <div className="flex flex-col items-center space-y-1">
-                <Zap className="h-8 w-8 text-yellow-400" />
-                <p className="text-sm font-medium text-purple-200">Coins</p>
-                <p className="text-2xl font-bold text-white">{coins}</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <h3 className="text-lg font-semibold text-center text-white">
-                Your Progress
-              </h3>
-              <Progress
-                value={userProgress}
-                className="w-full h-4 rounded-full bg-purple-300"
-              />
-              <p className="text-sm text-purple-200 text-center">
-                {userProgress}% towards your next goal
-              </p>
-            </div>
-            <Button
-              className="w-full py-6 bg-gradient-to-r from-purple-400 to-pink-500 hover:from-purple-500 hover:to-pink-600 text-white text-lg font-semibold rounded-full transition-all duration-300 ease-in-out transform hover:scale-105"
-              onClick={handleNicotineFreeDayClick}
-            >
-              <Droplet className="mr-2 h-6 w-6" />
-              Log Nicotine-Free Day
-            </Button>
-          </div>
-        </CardContent>
-      </Card> */}
-
       <Tabs defaultValue="leaderboard" className="">
         <TabsList className="flex justify-center bg-white bg-opacity-10">
           <TabsTrigger
