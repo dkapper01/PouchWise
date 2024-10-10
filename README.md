@@ -6,7 +6,7 @@ PouchWise is an app that integrates with [CUDIS](https://www.cudis.xyz/) wearabl
 
 ### API Response
 
-The app's API retrieves heart rate data from the user's wearable device within a specified time range and returns the following data in the response:
+The app's API retrieves heart rate data from the CUDIS wearable device within a specified time range and returns the following data in the response:
 
 - **HTTP Status:** 200 (Success)
 - **Message:** "success" (Indicates the successful retrieval of heart rate data)
