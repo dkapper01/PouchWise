@@ -2,6 +2,8 @@
 
 ### Overview
 
+[https://www.pouchwise.com/](https://www.pouchwise.com/)
+
 PouchWise is an app that integrates with [CUDIS](https://www.cudis.xyz/) wearable devices to track the user's heart rate and compares this data to the user's logged nicotine consumption. The app provides insights into how nicotine intake might be affecting the user's heart rate by visualizing key metrics such as maximum, minimum, and average heart rates for specific time periods.
 
 ### API Response
@@ -122,3 +124,5 @@ Combine the data for the date "2024-09-16" to see how nicotine intake relates to
 #### Step 3: Derive Insights
 
 On 2024-09-16, the user consumed 5 units of nicotine, and their heart rate ranged between 70-80 bpm. If there are multiple days of data, you can analyze whether higher nicotine units on other days led to higher heart rates, thus deriving actionable insights.
+
+![Home page](image.png)
