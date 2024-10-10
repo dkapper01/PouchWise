@@ -126,3 +126,4 @@ Combine the data for the date "2024-09-16" to see how nicotine intake relates to
 On 2024-09-16, the user consumed 5 units of nicotine, and their heart rate ranged between 70-80 bpm. If there are multiple days of data, you can analyze whether higher nicotine units on other days led to higher heart rates, thus deriving actionable insights.
 
 ![Home page](image.png)
+![Heart rate page](image-1.png)
