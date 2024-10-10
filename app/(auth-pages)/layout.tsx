@@ -1,4 +1,4 @@
-// import BottomNavBar from "@/components/BottomNavBar";
+import BottomNavBar from "@/components/BottomNavBar";
 
 export default async function Layout({
   children,

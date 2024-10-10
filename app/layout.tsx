@@ -6,7 +6,7 @@ import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "next-themes";
 import Link from "next/link";
-import BottomNavBar from "@/components/BottomNavBar";
+// import BottomNavBar from "@/components/BottomNavBar";
 
 import "./globals.css";
 
@@ -47,7 +47,7 @@ export default function RootLayout({
               <div className="">{children}</div>
             </div>
 
-            <BottomNavBar />
+            {/* <BottomNavBar /> */}
           </main>
         </ThemeProvider>
       </body>
